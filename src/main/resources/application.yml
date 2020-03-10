@@ -1,0 +1,21 @@
+islandHopping:
+  mapEndpoint: https://private-2e8649-advapi.apiary-mock.com
+logging:
+  level:
+    orgspringframework.transaction: debug
+    org.springframework.orm.jpa: debug
+    com.gnaderi: debug
+  file: islandHopping.log
+spring:
+#  datasource:
+#    schema: classpath:/sql/MAP_ADVISOR_DB_Schema.sql
+  jpa:
+    open-in-view: true
+    hibernate:
+      use-new-id-generator-mappings: true
+server:
+  port: 8080
+#  h2:
+#      console:
+#        enabled: true
+#        path: /h2-console
